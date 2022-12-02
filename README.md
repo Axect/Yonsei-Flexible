@@ -1,6 +1,6 @@
 # 연세대학교 전문연구요원 유연근무제 시간 계산기
 
-## 설치
+## 설치 (소스코드 컴파일)
 
 ### Rust 설치
 
@@ -19,6 +19,10 @@
     ```sh 
     cargo install yonsei-flexible
     ```
+
+## 설치 (배포된 바이너리 사용)
+
+[Releases](https://github.com/Axect/Yonsei-Flexible/releases) 링크로 들어가 자신의 OS에 맞는 zip 파일을 받아 사용하시면 됩니다.
 
 ## 사용
 
