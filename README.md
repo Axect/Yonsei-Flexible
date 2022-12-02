@@ -1,26 +1,6 @@
 # 연세대학교 전문연구요원 유연근무제 시간 계산기
 
-## 설치 (소스코드 컴파일)
-
-### Rust 설치
-
-[Rustup](https://rustup.rs/) 에 접속하여 Rust를 설치합니다.
-
-혹시 어려움이 있다면 다음의 링크를 참고하여 설치해보세요.
-
-[https://yoongrammer.tistory.com/12](https://yoongrammer.tistory.com/12)
-
-### Yonsei-Flexible 설치
-
-1. Linux나 MacOS 유저라면 Terminal을 열고 Windows 유저라면 cmd나 powershell을 실행합니다.
-
-2. 다음 명령어를 실행하여 설치합니다.
-
-    ```sh 
-    cargo install yonsei-flexible
-    ```
-
-## 설치 (배포된 바이너리 사용)
+## 설치
 
 [Releases](https://github.com/Axect/Yonsei-Flexible/releases) 링크로 들어가 자신의 OS에 맞는 zip 파일을 받아 사용하시면 됩니다.
 
