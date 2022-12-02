@@ -2,4 +2,11 @@
 name = "yonsei-flexible"
 version = "0.1.0"
 edition = "2021"
+authors = ["axect <axect@outlook.kr>"]
+description = "Yonsei Flexible Calculator"
+repository = "https://github.com/Axect/Yonsei-Flexible"
+licence = "MIT OR Apache-2.0"
+categories = ["command-line-utilities"]
+readme = "README.md"
+keywords = ["yonsei", "flexible", "calculator"]
 exclude = ["example.txt"]
