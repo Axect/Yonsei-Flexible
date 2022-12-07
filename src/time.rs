@@ -67,11 +67,6 @@ impl Add for HMS {
             hour += 1;
         }
 
-        if hour >= 24 {
-            hour -= 24;
-            println!("Warning: overflow in HMS::add");
-        }
-
         HMS::new(hour, minute, second)
     }
 }
@@ -92,11 +87,6 @@ impl Sub for HMS {
         if minute < 0 {
             minute += 60;
             hour -= 1;
-        }
-
-        if hour < 0 {
-            hour += 24;
-            println!("Warning: overflow in HMS::sub");
         }
 
         HMS::new(hour, minute, second)
