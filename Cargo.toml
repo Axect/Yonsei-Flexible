@@ -1,6 +1,6 @@
 [package]
 name = "yonsei-flexible"
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
 authors = ["axect <axect@outlook.kr>"]
 description = "Yonsei Flexible Calculator"
@@ -10,3 +10,6 @@ categories = ["command-line-utilities"]
 readme = "README.md"
 keywords = ["yonsei", "flexible", "calculator"]
 exclude = ["example.txt"]
+
+[dependencies]
+dialoguer = "0.10.2"
