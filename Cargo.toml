@@ -13,3 +13,4 @@ exclude = ["example.txt"]
 
 [dependencies]
 dialoguer = "0.10.2"
+dont_disappear = "3.0.1"

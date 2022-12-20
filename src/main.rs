@@ -7,6 +7,7 @@ use yonsei_flexible::calc::{
     calc_hope_finish_time
 };
 use dialoguer::{theme::ColorfulTheme, Select, Input};
+use dont_disappear::any_key_to_continue;
 
 fn main() {
     // 1. Select the type of calculation
@@ -28,11 +29,11 @@ fn main() {
             loop {
                 // Require input
                 let start_input: String = Input::with_theme(&ColorfulTheme::default())
-                    .with_prompt("Input start time as HH:MM:SS")
+                    .with_prompt("Input start time as HH:MM or HH:MM:SS")
                     .interact()
                     .unwrap();
                 let end_input: String = Input::with_theme(&ColorfulTheme::default())
-                    .with_prompt("Input end time as HH:MM:SS")
+                    .with_prompt("Input end time as HH:MM or HH:MM:SS")
                     .interact()
                     .unwrap();
 
@@ -52,22 +53,24 @@ fn main() {
         1 => {
             // Require input
             let start_input: String = Input::with_theme(&ColorfulTheme::default())
-                .with_prompt("Input start time as HH:MM:SS")
+                .with_prompt("Input start time as HH:MM or HH:MM:SS")
                 .interact()
                 .unwrap();
 
             let start_time = HMS::parse(start_input.trim()).unwrap();
             let min_finish_time = calc_minimum_finish_time(start_time);
             println!("Minimum finish time: {}", min_finish_time);
+
+            any_key_to_continue::default();
         }
         2 => {
             // Require input
             let start_input: String = Input::with_theme(&ColorfulTheme::default())
-                .with_prompt("Input start time as HH:MM:SS")
+                .with_prompt("Input start time as HH:MM or HH:MM:SS")
                 .interact()
                 .unwrap();
             let add_input: String = Input::with_theme(&ColorfulTheme::default())
-                .with_prompt("Input additional time as HH:MM:SS")
+                .with_prompt("Input additional time as HH:MM or HH:MM:SS")
                 .interact()
                 .unwrap();
 
@@ -78,6 +81,8 @@ fn main() {
             let additional_time = HMS::parse(additional).unwrap();
             let hope_finish_time = calc_hope_finish_time(start_time, additional_time);
             println!("Finish time: {}", hope_finish_time);
+
+            any_key_to_continue::default();
         }
         _ => unreachable!()
     }

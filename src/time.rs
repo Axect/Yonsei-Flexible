@@ -21,7 +21,10 @@ impl HMS {
         let mut parts = s.split(':');
         let hour = parts.next()?.parse().ok()?;
         let minute = parts.next()?.parse().ok()?;
-        let second = parts.next()?.parse().ok()?;
+        let second = match parts.next() {
+            None => 0,
+            Some(s) => s.parse().ok()?,
+        };
         Some(HMS::new(hour, minute, second))
     }
 }
