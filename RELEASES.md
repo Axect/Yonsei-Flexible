@@ -1,6 +1,6 @@
 # Ver 0.2.1
 
-* Add dependency - ['dont_disappear'](https://gitlab.com/efunb/dont_disappear)
+* Add dependency - [`dont_disappear`](https://gitlab.com/efunb/dont_disappear)
 * Flexible input options : 이제 HH:MM으로도 입력할 수 있습니다.
 
 # Ver 0.2.0
@@ -11,13 +11,9 @@
     * Calculate finish time
 * Add dependency - [`dialoguer`](https://github.com/mitsuhiko/dialoguer)
 
------
-
 # Ver 0.1.1
 
 * Accumulated time 계산
-
------
 
 # Ver 0.1.0
 
